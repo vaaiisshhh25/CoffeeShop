@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Landing page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="./img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">What's new</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee <br>It's <span>STARBUCKS</span></h2>
+                <p>Love the taste of regular coffee,but want to add some holiday cheer to it? STARBUCKS holiday drink,Choosing a drink at Starbucks is complicated enough. There are hot and cold options, countless variations of drinks, and even a “secret menu.” Add the Seasonal choices into the mix and picking a drink could make anyone indecisive. Get ready to run to your nearest Starbucks because we’ve made the choice easier for you. Here are the best Starbucks drinks for every season.With these drink orders, you can take on every season at Starbucks with the know-how and confidence of a gold card member. To get exclusive deals on the best Starbucks drinks straight to your inbox, sign up today! Your next drink may just be on us.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="./img/img1.png" class="STARBUCKS">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><a href="#"><img src="./img/thumb1.png" onclick="imgSlider('./img/img1.png'); changeCircleColor('#017143') " ></a></li>
+            <li><a href="#"><img src="./img/thumb2.png" onclick="imgSlider('./img/img2.png'); changeCircleColor('#eb7495') " ></a></li>
+            <li><a href="#"><img src="./img/thumb3.png" onclick="imgSlider('./img/img3.png'); changeCircleColor('#d752b1') " ></a></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="./img/facebook (2).png"></a></li>
+            <li><a href="#"><img src="./img/twitter (1).svg"></a></li>
+            <li><a href="#"><img src="./img/instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.STARBUCKS').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+    </script>
+</body>
+</html>
